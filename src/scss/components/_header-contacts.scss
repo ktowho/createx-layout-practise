@@ -1,5 +1,6 @@
 .header-contacts {
   @include flex-v-center;
+  transform: translateX(-4px);
 
   &__link {
     @include flex-column-start;
