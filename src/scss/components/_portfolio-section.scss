@@ -1,0 +1,20 @@
+.portfolio-section {
+  background-color: var(--color-light);
+  padding: 120px 0;
+
+  &__slider-nav {
+    transform: translateX(10px);
+  }
+
+  &__top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
+    padding-bottom: 12px;
+    max-width: 710px;
+  }
+}
