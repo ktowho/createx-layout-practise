@@ -1,7 +1,9 @@
-console.log('sliders');
-var swiper = new Swiper('.swiper', {
+const bodyStyles = window.getComputedStyle(document.body);
+const gap = parseInt(bodyStyles.getPropertyValue('--grid-gap')); //get
+
+const portfolioSlider = new Swiper('.portfolio-section__items', {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: gap,
   loop: true,
   navigation: {
     nextEl: '.portfolio-section__next',
@@ -10,5 +12,15 @@ var swiper = new Swiper('.swiper', {
 
 });
 
+const testimonialsSlider = new Swiper('.testimonials__items', {
+  slidesPerView: 1,
+  spaceBetween: gap,
+  loop: true,
+  navigation: {
+    nextEl: '.testimonials__next',
+    prevEl: '.testimonials__prev',
+  },
+
+});
 
 
