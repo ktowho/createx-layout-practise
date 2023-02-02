@@ -23,13 +23,28 @@
     &::placeholder {
       color: var(--color-gray-600);
     }
+
+    &--big {
+      height: 66px;
+      resize: none;
+      padding-top: 10px;
+    }
   }
 
   &--big {
-      flex-grow: 1;
+    flex-grow: 1;
 
-      .form-field__input {
-        width: 100%;
-      }
+    .form-field__input {
+      width: 100%;
+    }
+  }
+
+  &--gray {
+    width: 100%;
+
+    .form-field__input {
+      width: 100%;
+      background-color: var(--color-gray-200);
+    }
   }
 }
