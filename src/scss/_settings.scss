@@ -219,7 +219,7 @@ a {
     height: 16px;
     border: 1px solid var(--color-primary);
     border-radius: 3px;
-    transform: translate(-5px, 1px);
+    transform: translate(-1px, 1px);
   }
 
   &__input::before {
@@ -247,4 +247,10 @@ a {
     color: var(--color-gray-800);
   }
 
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  gap: var(--grid-gap);
 }
