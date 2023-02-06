@@ -1,5 +1,16 @@
-.mission {
-  background-color: var(--color-light);
+.services-benefits {
+  padding-top: 80px;
+  padding-bottom: 48px;
+  background-color: var(--color-gray-900);
+
+  &__title {
+    color: var(--color-light);
+  }
+
+  &__btn {
+    padding: 15px 110px;
+    transform: translateY(74px);
+  }
 
   &__list {
     --mission-gap: 94px;
@@ -21,6 +32,7 @@
       &::after {
         content: "";
         position: absolute;
+        opacity: .4;
         right: calc(-1 * var(--mission-gap));
         top: 0;
         width: 1px;
@@ -29,16 +41,16 @@
       }
     }
 
-    &--quality {
-      background-image: url('../img/quality.svg');
+    &--terms {
+      background-image: url('../img/terms.svg');
     }
 
-    &--safety {
-      background-image: url('../img/safety.svg');
+    &--workers {
+      background-image: url('../img/workers.svg');
     }
 
-    &--comfort {
-      background-image: url('../img/comfort.svg');
+    &--supervision {
+      background-image: url('../img/supervision.svg');
     }
   }
 
@@ -48,7 +60,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
-    color: var(--color-gray-900);
+    color: var(--color-light);
   }
 
   &__descr {
@@ -56,42 +68,15 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: var(--color-gray-700);
+    color: var(--color-light);
+    opacity: .6;
+
+    &--big {
+      font-size: 18px;
+      line-height: 150%;
+      color: var(--color-light);
+      opacity: .6;
+    }
   }
 }
 
-.know-form {
-  position: relative;
-  top: 92px;
-  border-radius: 4px;
-  padding: 48px 60px;
-  box-shadow:
-    0 80px 80px -20px rgba(154, 156, 165, 0.08),
-    0 30px 24px -10px rgba(154, 156, 165, 0.05),
-    0 12px 10px -6px rgba(154, 156, 165, 0.04),
-    0 4px 4px -4px rgba(30, 33, 44, 0.03);
-  background-color: var(--color-light);
-
-  &__title {
-    margin: 0;
-    margin-bottom: 33px;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--color-gray-900);
-  }
-
-  &__content {
-    display: flex;
-    align-items: flex-end;
-  }
-
-  &__field {
-    margin-right: 24px;
-  }
-
-  &__btn {
-    padding: 11px 29px;
-  }
-}

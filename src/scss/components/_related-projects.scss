@@ -1,6 +1,7 @@
-.portfolio-section {
+.related-projects {
+  padding-top: 180px;
+  padding-bottom: 98px;
   background-color: var(--color-light);
-  padding: 120px 0;
 
   &__slider-nav {
     transform: translateX(10px);
@@ -29,5 +30,4 @@
   }
 
 }
-
 
