@@ -3,7 +3,7 @@
     <h2 class="visually-hidden">Portfolio</h2>
     <ul class="list-reset portfolio-nav">
       <li class="portfolio-nav__item">
-        <button class="btn-reset portfolio-nav__btn portfolio-nav__btn--active">
+        <button class="btn-reset portfolio-nav__btn portfolio-nav__btn--active" data-path="all">
           <svg class="portfolio-nav__icon">
             <use xlink:href="img/sprite.svg#work-project"></use>
           </svg>
@@ -11,7 +11,7 @@
         </button>
       </li>
       <li class="portfolio-nav__item">
-        <button class="btn-reset portfolio-nav__btn">
+        <button class="btn-reset portfolio-nav__btn" data-path="constr">
           <svg class="portfolio-nav__icon">
             <use xlink:href="img/sprite.svg#services-1"></use>
           </svg>
@@ -19,7 +19,7 @@
         </button>
       </li>
       <li class="portfolio-nav__item">
-        <button class="btn-reset portfolio-nav__btn">
+        <button class="btn-reset portfolio-nav__btn" data-path="dev">
           <svg class="portfolio-nav__icon">
             <use xlink:href="img/sprite.svg#services-2"></use>
           </svg>
@@ -27,7 +27,7 @@
         </button>
       </li>
       <li class="portfolio-nav__item">
-        <button class="btn-reset portfolio-nav__btn">
+        <button class="btn-reset portfolio-nav__btn" data-path="design">
           <svg class="portfolio-nav__icon">
             <use xlink:href="img/sprite.svg#services-3"></use>
           </svg>
@@ -35,7 +35,7 @@
         </button>
       </li>
       <li class="portfolio-nav__item">
-        <button class="btn-reset portfolio-nav__btn">
+        <button class="btn-reset portfolio-nav__btn" data-path="repair">
           <svg class="portfolio-nav__icon">
             <use xlink:href="img/sprite.svg#services-4"></use>
           </svg>
@@ -45,8 +45,8 @@
     </ul>
 
     <ul class="list-reset portfolio-tabs grid">
-      <li class="portfolio-tabs__item">
-        <a href="#" class="portfolio-item">
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="constr">
           <img class="portfolio-item__image" src="img/portfolio-1.jpg" alt="Portfolio cover">
           <div class="portfolio-item__content">
             <h3 class="portfolio-item__title">Red Finger Building</h3>
@@ -55,8 +55,8 @@
           </div>
          </a>
       </li>
-      <li class="portfolio-tabs__item">
-        <a href="#" class="portfolio-item">
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="constr">
           <img class="portfolio-item__image" src="img/portfolio-2.jpg" alt="Portfolio cover">
           <div class="portfolio-item__content">
             <h3 class="portfolio-item__title">Cubes Building</h3>
@@ -65,8 +65,8 @@
           </div>
          </a>
       </li>
-      <li class="portfolio-tabs__item">
-        <a href="#" class="portfolio-item">
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="dev">
           <img class="portfolio-item__image" src="img/portfolio-3.jpg" alt="Portfolio cover">
           <div class="portfolio-item__content">
             <h3 class="portfolio-item__title">The Pencil Building</h3>
@@ -75,8 +75,8 @@
           </div>
          </a>
       </li>
-      <li class="portfolio-tabs__item">
-        <a href="#" class="portfolio-item">
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="dev">
           <img class="portfolio-item__image" src="img/portfolio-4.jpg" alt="Portfolio cover">
           <div class="portfolio-item__content">
             <h3 class="portfolio-item__title">Modern Cottage</h3>
@@ -85,8 +85,8 @@
           </div>
          </a>
       </li>
-      <li class="portfolio-tabs__item">
-        <a href="#" class="portfolio-item">
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="dev">
           <img class="portfolio-item__image" src="img/portfolio-5.jpg" alt="Portfolio cover">
           <div class="portfolio-item__content">
             <h3 class="portfolio-item__title">Luxury Beach House</h3>
@@ -95,8 +95,8 @@
           </div>
          </a>
       </li>
-      <li class="portfolio-tabs__item">
-        <a href="#" class="portfolio-item">
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="design">
           <img class="portfolio-item__image" src="img/portfolio-6.jpg" alt="Portfolio cover">
           <div class="portfolio-item__content">
             <h3 class="portfolio-item__title">Modern Double Bedroom</h3>
@@ -105,8 +105,8 @@
           </div>
          </a>
       </li>
-      <li class="portfolio-tabs__item">
-        <a href="#" class="portfolio-item">
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="design">
           <img class="portfolio-item__image" src="img/portfolio-7.jpg" alt="Portfolio cover">
           <div class="portfolio-item__content">
             <h3 class="portfolio-item__title">Kids Bedroom With Decorations</h3>
@@ -115,8 +115,8 @@
           </div>
          </a>
       </li>
-      <li class="portfolio-tabs__item">
-        <a href="#" class="portfolio-item">
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="repair">
           <img class="portfolio-item__image" src="img/portfolio-8.jpg" alt="Portfolio cover">
           <div class="portfolio-item__content">
             <h3 class="portfolio-item__title">Scandinavian Style Interior</h3>
@@ -125,11 +125,101 @@
           </div>
          </a>
       </li>
-      <li class="portfolio-tabs__item">
-        <a href="#" class="portfolio-item">
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="repair">
           <img class="portfolio-item__image" src="img/portfolio-9.jpg" alt="Portfolio cover">
           <div class="portfolio-item__content">
             <h3 class="portfolio-item__title">Brown and Gray Painted House</h3>
+            <span class="portfolio-item__descr">Private houses</span>
+            <div class="portfolio-item__btn">View Project</div>
+          </div>
+         </a>
+      </li>
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="repair">
+          <img class="portfolio-item__image" src="img/portfolio-9.jpg" alt="Portfolio cover">
+          <div class="portfolio-item__content">
+            <h3 class="portfolio-item__title">Brown and Gray Painted House</h3>
+            <span class="portfolio-item__descr">Private houses</span>
+            <div class="portfolio-item__btn">View Project</div>
+          </div>
+         </a>
+      </li>
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="dev">
+          <img class="portfolio-item__image" src="img/portfolio-3.jpg" alt="Portfolio cover">
+          <div class="portfolio-item__content">
+            <h3 class="portfolio-item__title">The Pencil Building</h3>
+            <span class="portfolio-item__descr">Stores & Malls</span>
+            <div class="portfolio-item__btn">View Project</div>
+          </div>
+         </a>
+      </li>
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="dev">
+          <img class="portfolio-item__image" src="img/portfolio-4.jpg" alt="Portfolio cover">
+          <div class="portfolio-item__content">
+            <h3 class="portfolio-item__title">Modern Cottage</h3>
+            <span class="portfolio-item__descr">Private houses</span>
+            <div class="portfolio-item__btn">View Project</div>
+          </div>
+         </a>
+      </li>
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="dev">
+          <img class="portfolio-item__image" src="img/portfolio-3.jpg" alt="Portfolio cover">
+          <div class="portfolio-item__content">
+            <h3 class="portfolio-item__title">The Pencil Building</h3>
+            <span class="portfolio-item__descr">Stores & Malls</span>
+            <div class="portfolio-item__btn">View Project</div>
+          </div>
+         </a>
+      </li>
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="dev">
+          <img class="portfolio-item__image" src="img/portfolio-4.jpg" alt="Portfolio cover">
+          <div class="portfolio-item__content">
+            <h3 class="portfolio-item__title">Modern Cottage</h3>
+            <span class="portfolio-item__descr">Private houses</span>
+            <div class="portfolio-item__btn">View Project</div>
+          </div>
+         </a>
+      </li>
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="dev">
+          <img class="portfolio-item__image" src="img/portfolio-3.jpg" alt="Portfolio cover">
+          <div class="portfolio-item__content">
+            <h3 class="portfolio-item__title">The Pencil Building</h3>
+            <span class="portfolio-item__descr">Stores & Malls</span>
+            <div class="portfolio-item__btn">View Project</div>
+          </div>
+         </a>
+      </li>
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="dev">
+          <img class="portfolio-item__image" src="img/portfolio-4.jpg" alt="Portfolio cover">
+          <div class="portfolio-item__content">
+            <h3 class="portfolio-item__title">Modern Cottage</h3>
+            <span class="portfolio-item__descr">Private houses</span>
+            <div class="portfolio-item__btn">View Project</div>
+          </div>
+         </a>
+      </li>
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="dev">
+          <img class="portfolio-item__image" src="img/portfolio-3.jpg" alt="Portfolio cover">
+          <div class="portfolio-item__content">
+            <h3 class="portfolio-item__title">The Pencil Building</h3>
+            <span class="portfolio-item__descr">Stores & Malls</span>
+            <div class="portfolio-item__btn">View Project</div>
+          </div>
+         </a>
+      </li>
+      <li class="portfolio-tabs__item portfolio-tabs__item--visible">
+        <a href="#" class="portfolio-item" data-target="dev">
+          <img class="portfolio-item__image" src="img/portfolio-4.jpg" alt="Portfolio cover">
+          <div class="portfolio-item__content">
+            <h3 class="portfolio-item__title">Modern Cottage</h3>
             <span class="portfolio-item__descr">Private houses</span>
             <div class="portfolio-item__btn">View Project</div>
           </div>

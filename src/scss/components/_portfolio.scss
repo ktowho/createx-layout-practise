@@ -27,9 +27,11 @@
     &--active {
       color: var(--color-light);
       background-color: var(--color-primary);
+      pointer-events: none;
 
       .portfolio-nav__text {
         color: var(--color-light);
+        pointer-events: none;
       }
     }
   }
@@ -40,7 +42,7 @@
     line-height: 160%;
     color: var(--color-gray-600);
     transition: color 0.3s ease-in-out;
-
+    pointer-events: none;
   }
 
   &__icon {
@@ -50,6 +52,7 @@
     object-fit: cover;
     color: inherit;
     fill: currentColor;
+    pointer-events: none;
   }
 
   &__item {
@@ -63,7 +66,17 @@
 
 .portfolio-tabs {
   &__item {
+    display: none;
     grid-column: 4 span;
+
+
+    &--visible {
+      display: block;
+    }
+
+    &--visible-more {
+      display: block !important;
+    }
   }
 }
 
