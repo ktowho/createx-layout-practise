@@ -80,3 +80,17 @@ if (portfolioTabsNav) {
     }
   });
 }
+
+function duplicateCount(text){
+  const lettersCount = {};
+  for (let character of text.toLowerCase()) {
+    lettersCount[character] = (lettersCount[character] || 0) + 1;
+  }
+  let counter = 0;
+  for (let item of Object.entries(lettersCount)) {
+    if (item[1] > 1) {
+      counter++;
+    }
+  }
+  return counter;
+}

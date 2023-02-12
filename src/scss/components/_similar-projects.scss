@@ -1,0 +1,33 @@
+.similar-projects {
+  padding-top: 180px;
+  padding-bottom: 98px;
+  background-color: var(--color-light);
+
+  &__slider-nav {
+    transform: translateX(10px);
+  }
+
+  &__top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    margin: 0;
+    padding-bottom: 12px;
+    max-width: 710px;
+  }
+
+  &__items {
+    margin: -100px -30px;
+    padding: 100px 30px;
+  }
+
+  &__learn {
+    transform: translateY(-1px);
+  }
+
+}
+
