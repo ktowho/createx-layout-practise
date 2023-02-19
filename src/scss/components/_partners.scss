@@ -2,13 +2,27 @@
   padding: 80px 0;
   background-color: var(--color-gray-200);
 
+  &--about {
+    padding: 120px 0;
+    background-color: var(--color-light);
+  }
+
   &__title {
     margin-bottom: 60px;
+  }
+
+  &__descr {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-gray-700);
   }
 
   &__list {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 102px;
+  column-gap: 101px;
+  row-gap: 32px;
   }
 }
