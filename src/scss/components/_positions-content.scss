@@ -1,0 +1,116 @@
+.positions-content {
+  padding-top: 120px;
+  padding-bottom: 90px;
+
+  &__left {
+    grid-column: 7 span;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 5 span;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+}
+
+.positions-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--color-gray-300);
+  border-radius: 4px;
+  padding: 32px 40px;
+  background-color: var(--color-light);
+
+  &__meta {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-gray-700);
+  }
+
+  &__city {
+    position: relative;
+    margin-right: 21px;
+    padding-left: 24px;
+    background-image: url("../img/city.svg");
+    background-position: left center;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -13px;
+      top: 50%;
+      width: 1px;
+      height: 12px;
+      background-color: currentColor;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__time {
+    padding-left: 24px;
+    background-image: url("../img/time.svg");
+    background-position: left center;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-gray-900);
+  }
+
+  &__link {
+    padding: 11px 32px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.positions-looking {
+  width: 395px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: var(--color-gray-900);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 48px;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-gray-800);
+  }
+
+  &__btn {
+
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+
+    &--subs {
+      padding: 15px 43px;
+    }
+
+    &--cv {
+      padding: 15px 52px;
+    }
+  }
+}
