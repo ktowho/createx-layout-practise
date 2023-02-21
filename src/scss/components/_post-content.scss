@@ -1,0 +1,102 @@
+.post-content {
+  &__image {
+    margin-bottom: 60px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: -80px;
+  }
+
+  &__text {
+    max-width: 840px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-gray-900);
+  }
+
+  &__para {
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-gray-800);
+  }
+
+  &__quote {
+    position: relative;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-gray-900);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -42px;
+      top: 0px;
+      width: 28px;
+      height: 20px;
+      background-image: url("../img/braces.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__list {
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-gray-800);
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: 3px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/decisions-check.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__share {
+
+    display: flex;
+    margin-right: 20px;
+    margin-top: 43px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-gray-900);
+
+    .share {
+      margin-right: 10px;
+    }
+
+    .social__link {
+      svg {
+        fill: var(--color-gray-700);
+      }
+    }
+  }
+}
