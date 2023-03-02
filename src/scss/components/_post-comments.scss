@@ -1,0 +1,17 @@
+.comments {
+  padding-top: 65px;
+  padding-bottom: 30px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 58px;
+  }
+
+  &__item {
+    margin-bottom: 59px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
